@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Maquetacion JS</title>
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        //Cuando la pagina este cargada
+        var template = document.getElementById("article-template"); //Ocupamos el codigo html desde el ID
+
+        var articles = document.getElementById("articles"); //Toma el elemento desde el ID
+
+        //recorre i
+        for (var i = 1; i <= 5; i++) {
+          var clonado = template.cloneNode(true); //clona el template antes tomado
+          clonado.removeAttribute("id"); //remueve el id de los templates clonados
+          var h2 = clonado.getElementsByTagName("h2")[0]; //Toma el h2
+          h2.innerHTML = h2.textContent + " " + i; // y le agrega el I para que cada vez se vea el numero del bucle en que se inserto
+          articles.appendChild(clonado); //inserta el template clonado en el elemento ARTICLES.
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="center">
+        <!-- logo -->
+        <div id="logo">
+          <img src="assets/images/react.png" class="app-logo" alt="logotipo" />
+          <span id="brand"> <strong>Master</strong>React </span>
+        </div>
+        <!-- menu -->
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="#">Inicio</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Formulario</a>
+            </li>
+            <li>
+              <a href="#">Pagina 1</a>
+            </li>
+            <li>
+              <a href="#">Pagina 2</a>
+            </li>
+          </ul>
+        </nav>
+        <!--Limpiar elementos flotantes-->
+        <div class="clearfix"></div>
+      </div>
+    </header>
+    <div id="slider" class="slider-big">
+      <h1>Welcome to the page Felipe Espana</h1>
+      <a href="#" class="btn-white">Ir al blog</a>
+    </div>
+    <div class="center">
+      <section id="content">
+        <h2 class="subheader">Ultimos articulos</h2>
+
+        <!--Listado articulos-->
+        <div id="articles">
+          <article class="article-item" id="article-template">
+            <div class="image-wrap">
+              <img
+                src="https://concepto.de/wp-content/uploads/2015/03/paisaje-e1549600034372.jpg"
+                alt="paisaje"
+              />
+            </div>
+            <h2>Articulo de prueba</h2>
+            <span class="date">Hace 5 min</span>
+            <a href="#">Leer mas</a>
+            <div class="clearfix"></div>
+          </article>
+
+          <!--ANIADIR ARTICULOS POR JS-->
+        </div>
+      </section>
+
+      <aside id="sidebar">
+        <div id="nav-blog" class="sidebar-item">
+          <h3>puedes hacer esto</h3>
+          <a href="#" class="btn btn-success">Crear articulo</a>
+        </div>
+        <div id="search" class="sidebar-item">
+          <h3>Buscador</h3>
+          <p>encuentra el articulo que buscas</p>
+          <form action="">
+            <input type="text" name="search" />
+            <input type="submit" name="submit" value="Buscar" class="btn" />
+          </form>
+        </div>
+      </aside>
+      <div class="clearfix"></div>
+    </div>
+    <footer id="footer">
+      <div class="center">
+        <p>&copy; Felipe Espania</p>
+      </div>
+    </footer>
+  </body>
+</html>
