@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Maquetacion JS</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="center">
+        <!-- logo -->
+        <div id="logo">
+          <img src="assets/images/react.png" class="app-logo" alt="logotipo" />
+          <span id="brand"> <strong>Master</strong>React </span>
+        </div>
+        <!-- menu -->
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="formulario.html">Formulario</a>
+            </li>
+            <li>
+              <a href="#">Pagina 1</a>
+            </li>
+            <li>
+              <a href="#">Pagina 2</a>
+            </li>
+          </ul>
+        </nav>
+        <!--Limpiar elementos flotantes-->
+        <div class="clearfix"></div>
+      </div>
+    </header>
+    <div class="center">
+      <section id="content">
+        <h2 class="subheader">Ultimos articulos</h2>
+
+        <!--Listado articulos-->
+        <div id="articles">
+          <article class="article-item article-detail">
+            <div class="image-wrap">
+              <img
+                src="https://concepto.de/wp-content/uploads/2015/03/paisaje-e1549600034372.jpg"
+                alt="paisaje"
+              />
+            </div>
+            <h1 class="subheader">Articulo de prueba</h1>
+            <span class="date">Hace 5 min</span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              felis odio, tincidunt ac sodales et, aliquet sit amet felis.
+              Aliquam fermentum interdum enim sed convallis. Aliquam arcu
+              tortor, imperdiet in elementum eget, blandit in massa. Nunc a
+              augue quis nulla blandit scelerisque. Cras cursus gravida quam.
+              Curabitur dui ligula, finibus sagittis sem vel, gravida ornare
+              lectus. Donec sit amet auctor massa, quis sodales tortor. Aliquam
+              pulvinar bibendum rutrum. Proin sagittis orci ut leo tristique
+              accumsan. In interdum dolor augue, et laoreet magna eleifend sit
+              amet. Morbi finibus, ligula ultricies interdum fringilla, libero
+              velit imperdiet velit, mattis porttitor dolor massa pharetra
+              ligula. Vestibulum ante ipsum primis in faucibus orci luctus et
+              ultrices posuere cubilia Curae;
+            </p>
+            <p>
+              Donec tortor turpis, auctor eget efficitur pulvinar, scelerisque
+              porta tellus. Curabitur semper dui dolor, et bibendum augue
+              dapibus sit amet. Vivamus varius lectus ac ipsum venenatis tempor.
+              Sed feugiat elementum eleifend. Sed eleifend eros iaculis,
+              molestie velit eget, accumsan libero. Praesent efficitur ligula
+              metus. Nunc et mi lectus. Proin eu libero quis lacus interdum
+              auctor in sit amet quam. Nullam quis massa porttitor, ultricies
+              neque at, volutpat risus. Vestibulum eget libero ligula.
+              Suspendisse sed erat dignissim, volutpat velit elementum,
+              pellentesque purus. Aenean ante ante, condimentum sed ipsum a,
+              gravida semper turpis. Sed sodales eleifend augue, vitae hendrerit
+              dui suscipit sit amet. Pellentesque tristique et ante et vehicula.
+              Duis ultrices sem eget nibh eleifend scelerisque. In pulvinar
+              blandit erat sit amet porttitor.
+            </p>
+            <p>
+              Class aptent taciti sociosqu ad litora torquent per conubia
+              nostra, per inceptos himenaeos. Etiam ultricies, magna sed
+              condimentum viverra, diam lorem maximus mi, nec egestas enim nunc
+              non libero. Duis egestas quis orci et porttitor. Integer id nunc
+              pharetra, dapibus lorem et, iaculis dui. Etiam facilisis quam
+              purus, in faucibus sapien ornare id.
+            </p>
+            <div class="clearfix"></div>
+          </article>
+
+          <!--ANIADIR ARTICULOS POR JS-->
+        </div>
+      </section>
+
+      <aside id="sidebar">
+        <div id="nav-blog" class="sidebar-item">
+          <h3>puedes hacer esto</h3>
+          <a href="#" class="btn btn-success">Crear articulo</a>
+        </div>
+        <div id="search" class="sidebar-item">
+          <h3>Buscador</h3>
+          <p>encuentra el articulo que buscas</p>
+          <form action="">
+            <input type="text" name="search" />
+            <input type="submit" name="submit" value="Buscar" class="btn" />
+          </form>
+        </div>
+      </aside>
+      <div class="clearfix"></div>
+    </div>
+    <footer id="footer">
+      <div class="center">
+        <p>&copy; Felipe Espania</p>
+      </div>
+    </footer>
+  </body>
+</html>
